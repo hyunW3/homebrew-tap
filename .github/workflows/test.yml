@@ -1,0 +1,16 @@
+name: brew
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Homebrew/actions/setup-homebrew@master  # also taps this repository
+      - run: brew install hyunw3/tap/session-snap
+      - run: brew test hyunw3/tap/session-snap
+      - run: brew audit --strict hyunw3/tap/session-snap
+      - run: session-snap --version
