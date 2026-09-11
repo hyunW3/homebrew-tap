@@ -1,8 +1,8 @@
 class SessionSnap < Formula
   desc "Save and restore tmux sessions along with their Claude Code conversations"
   homepage "https://github.com/hyunW3/session-snap"
-  url "https://github.com/hyunW3/session-snap/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "7f207fe05bb38341ca6a8378af86dd46a0e0bbd9802ac0b4037aecb6612f6671"
+  url "https://github.com/hyunW3/session-snap/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "b67321932dae48cd55e4dc3f05f150477189de040f6c50c6e2eb77f21cab7640"
   license "MIT"
   head "https://github.com/hyunW3/session-snap.git", branch: "main"
 
